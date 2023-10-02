@@ -16,8 +16,7 @@ class MainApp extends StatefulWidget {
 class _MainAppState extends State<MainApp> {
   void _getListAPI() {
     http.get(Uri.https('api.themoviedb.org', '/4/list/1'), headers: {
-      'authorization':
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MDhmYWNkMDFkMDI5ZTI4ZTlmNDNmNTQyNmMxZWIyZSIsInN1YiI6IjYwZTQ3OTgyNmVlM2Q3MDAyYzI4ODUwYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.NcmY0hq1lGeqG_TG_0SsBZGuSBW8jfhkApJbydn2t0U',
+      'authorization': 'Bearer xxxx',
       'content-type': 'application/json;charset=utf-8'
     }).then((Response value) => print(value.body));
   }
